@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Card } from "./index";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -26,6 +27,15 @@ const Projects = () => {
               link={"https://blogburn.vercel.app/"}
               className="mb-4 sm:mb-0"
             />
+
+            <Link to="/hackathon-project">
+            <Card
+              name={"Hackthon Project"}
+              description={"Admission portal"}
+              className="mb-4 sm:mb-0"
+            />
+            </Link>
+            
           </div>
 
           <h1 className="text-center text-4xl font-BebasNeue space-x-1 font-bold text-primary gradient-text">
@@ -59,7 +69,7 @@ const Projects = () => {
             Made with Vanilla JS
           </h1>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-screen-lg gap-4">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-screen-lg gap-4 mb-4">
             <Card
               name={"Stopwatch"}
               description={"Tells time!"}
